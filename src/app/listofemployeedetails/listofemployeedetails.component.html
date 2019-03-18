@@ -1,0 +1,19 @@
+
+<style>
+  .listofemployeedetails{
+    background-color: brown;
+
+  }
+  .listofemployees{
+    background-color: coral;  
+  }
+</style>
+
+<div class="listofemployeedetails">
+<h1 class="listofemployees">Employee's  Details: </h1>
+<table>
+  <tr><th>Employee_Name</th><th>Total_Hours_Spent</th></tr>
+  <tr *ngFor="let i of empname">
+    <td><h3>{{i}}</h3></td><h3><td>9H</td></h3></tr>
+</table>
+</div>

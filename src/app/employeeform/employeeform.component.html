@@ -1,0 +1,23 @@
+<style>
+  .one{
+
+    text-align: center;
+   background-color: pink;
+  }
+  
+</style>
+<div class="one">
+  
+<h1>Employee Form:</h1><br><br>
+<form #userlogin="ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
+  Employee Name: <input type="text" name="empname" ngModel><br>
+  Employee Id: <input type="password" name="empid" ngModel><br>
+   <input type="submit" name="submit"><br><br><br><br><br><br>
+   <p id="data">"Please fill the above form to add your  details"</p>
+   </form>
+   
+   <!-- <app-listofemployees  [empname]='empname' [empid]='empid'></app-listofemployees> -->
+  
+   
+  </div>
+  

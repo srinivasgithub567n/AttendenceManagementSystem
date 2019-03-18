@@ -1,0 +1,12 @@
+
+<h1>List of Employees: </h1>
+<table >
+  <tr><th></th><th>Employee Name</th><th>Entry</th><th>Exit</th><th></th></tr>
+  <tr *ngFor="let i of empname">
+    <td><input type="radio"></td><td>{{i}}</td><td><button  (click)="entry($event)">entry time</button></td><td><button (click)="exit($event)">exit time</button></td><td><button (click)="userDelete($event)" name="{{i}}">delete</button></td></tr>
+</table>
+
+<!-- <button (click)="fun1($event)">sample button</button> -->
+
+<!-- <p *ngFor="let i of empname">{{i}}</p> -->
+
